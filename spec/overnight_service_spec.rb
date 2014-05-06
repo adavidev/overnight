@@ -21,6 +21,25 @@ module Overnight
       end
     end
 
+    context :stop_timer do
+      before :each do
+        @timer = OvernightService.start_timer(:foo)
+      end
+
+      it "should stop a timer with a given name" do
+        OvernightService.get_timer(:foo).should_receive :stop
+        OvernightService.stop_timer(:foo)
+      end
+
+      it "should return the timer being stopped" do
+        OvernightService.stop_timer(:foo).should == OvernightService.get_timer(:foo)
+      end
+
+      it "should should also work with a timer object" do
+        OvernightService.stop_timer(OvernightService.get_timer(:foo)).should == OvernightService.get_timer(:foo)
+      end
+    end
+
     it "should have a list of timers" do
       OvernightService.timers.should be_a Hash
     end
