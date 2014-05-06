@@ -1,5 +1,5 @@
-module Timely
-  class TimelyService
+module Overnight
+  class OvernightService
     @@timers = {}
 
     def self.start_timer(timer_name = nil)

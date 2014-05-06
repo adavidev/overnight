@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    timely (0.1)
+    overnight (0.1)
 
 GEM
   remote: https://rubygems.org/
@@ -60,6 +60,6 @@ DEPENDENCIES
   guard
   guard-rspec
   guard-spork
+  overnight!
   rspec
   rspec-core
-  timely!

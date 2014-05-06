@@ -1,6 +1,6 @@
 require "spec_helper"
 
-module Timely
+module Overnight
   describe Timer do
     context :start do
       it "should create a timey object" do

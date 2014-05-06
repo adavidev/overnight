@@ -1,6 +1,6 @@
 require "spec_helper"
 
-module Timely
+module Overnight
   describe Timey do
     it "should hold a time on create" do
       Timey.new.get.should be_a Time

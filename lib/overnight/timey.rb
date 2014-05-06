@@ -1,4 +1,4 @@
-module Timely
+module Overnight
   class Timey
     def initialize
       @time = Time.now

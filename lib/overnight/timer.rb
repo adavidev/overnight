@@ -1,4 +1,4 @@
-module Timely
+module Overnight
   class Timer
     def start
       @start_time = Timey.new
