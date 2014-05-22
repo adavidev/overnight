@@ -17,7 +17,7 @@ module Overnight
       end
 
       it "should take a name for the timer being started" do
-        OvernightService.start_timer(:foo).should == OvernightService.timers.first[1]
+        OvernightService.start_timer(:foo).should == OvernightService.get_timer(:foo)
       end
     end
 

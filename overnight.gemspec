@@ -3,7 +3,7 @@ $:.push File.expand_path("../lib", __FILE__)
 # Describe your gem and declare its dependencies:
 Gem::Specification.new do |s|
   s.name        = "overnight"
-  s.version     = "0.1.1"
+  s.version     = "0.1.2"
   s.authors     = "Alan L. Davis"
   s.summary     = "Mundane stopwatch with a cool name"
   s.description = "Mundane stopwatch with a cool name. Will be possible to use for logging time slightly easier than finding puts statements hopefully"
